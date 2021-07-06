@@ -1,0 +1,30 @@
+<view class="home-wrapper">
+  <view class="nav">
+    <view bindtap="typeChange">
+      科目
+      <image mode="aspectFit" src="/images/down.png"></image>
+    </view>
+    <view bindtap="groupChange">
+      年级
+      <image mode="aspectFit" src="/images/down.png"></image>
+    </view>
+  </view>
+  <view class="map">
+    <view class="map-container">
+      <map scale="3" markers="{{markers}}" include-points="{{markers}}">
+        <cover-view slot="callout">
+          <block wx:for="{{customMarkers}}" wx:key="index">
+              <cover-view class="callout" marker-id="{{item.id}}">
+                <cover-view class="mytext" >{{item.title}}</cover-view>
+                <cover-view class="price" >¥{{item.price}}</cover-view>
+              </cover-view>
+          </block>
+          </cover-view>
+      </map>
+    </view>
+  </view>
+  <mp-actionSheet bindactiontap="typeClick" show="{{typeShow}}" actions="{{types}}">
+  </mp-actionSheet>
+  <mp-actionSheet bindactiontap="groupClick" show="{{groupShow}}" actions="{{groups}}">
+  </mp-actionSheet>
+</view>
