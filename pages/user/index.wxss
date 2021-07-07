@@ -1,0 +1,79 @@
+.user-wrapper{
+  height: 100%;
+  background-color: #f5f5f5;
+  color: #333;
+}
+.user-wrapper .nav{
+  height: 245rpx;
+  background: #00C277;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -50rpx;
+  top: -42rpx;
+}
+
+.user-container{
+  padding: 100rpx 30rpx 0;
+  position: relative;
+  z-index: 5;
+}
+
+.user-info{
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  text-align: center;
+  padding: 60rpx 85rpx 20rpx 85rpx;
+  position: relative;
+}
+
+.price{
+  height: 60rpx;
+  line-height: 60rpx;
+  background:rgba(0,194,119,0.1);
+  border-radius: 30rpx;
+  color: #00C277;
+  font-size: 26rpx;
+  margin: 20rpx 0;
+}
+
+.menus{
+  display: flex;
+  text-align: center;
+  color: #28282C;
+}
+.menus navigator{
+  flex: 1;
+  font-size: 26rpx;
+  line-height: 48rpx;
+  position: relative;
+}
+
+.menus navigator:first-child::after{
+  content: "";
+  width: 2rpx;
+  height: 20rpx;
+  display: inline-block;
+  background: #e1e1e1;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10rpx;
+}
+
+.menus .arrow{
+  vertical-align: -0.44em;
+  margin-left: 10rpx;
+}

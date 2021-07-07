@@ -1,1 +1,24 @@
-<view>发布</view>
+<view class="publish-wrapper">
+	<view class="title">点点约课</view>
+	<view class="nav">发布家教单&查看报名</view>
+	<view class="items">
+		<view class="item">
+			<navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+				<image src="/images/fb.png" />
+				<view>
+					<view class="h2">发布家教单</view>
+					<view class="h3">发布需求等待老师接单</view>
+				</view>
+			</navigator>
+		</view>
+		<view class="item">
+			<navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+				<image src="/images/ck.png" />
+				<view>
+					<view class="h2">查看报名信息</view>
+					<view class="h3">跟踪最新状态</view>
+				</view>
+			</navigator>
+		</view>
+	</view>
+</view>
